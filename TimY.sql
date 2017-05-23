@@ -11,3 +11,7 @@ CREATE TABLE `Story` (
   `Url` varchar(200) NOT NULL,
   PRIMARY KEY  (`id`)
 );
+CREATE TABLE `Users`(
+`username` varchar(100) NOT NULL,
+`password` varchar(100) NOT NULL
+);
