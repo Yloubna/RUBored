@@ -3,6 +3,7 @@
 <head>
 <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
 <style type="text/css">
 /* CLIENT-SPECIFIC STYLES */
 body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
@@ -22,7 +23,7 @@ body { height: 100% !important; margin: 0 !important; padding: 0 !important; wid
         font-size: 25px;
         text-align: center;
         padding-top: 80px;
-        
+
     }
 /* iOS BLUE LINKS */
 a[x-apple-data-detectors] {
@@ -33,6 +34,25 @@ a[x-apple-data-detectors] {
     font-weight: inherit !important;
     line-height: inherit !important;
 }
+
+#selectCategory, #selectTime, #Valider{
+  height: 50px;
+  width: 120px;
+  border-radius: 28px;
+  background-color: #75b6c9;
+  font-size: 18px;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 16px 28px;
+  border: 1px solid #75b6c9;
+  margin-left: 2%;
+}
+
+ #Valider{
+   height: auto;
+   width: auto;
+ }
+
 
 /* MOBILE STYLES */
 @media screen and (max-width: 600px) {
@@ -60,6 +80,7 @@ a[x-apple-data-detectors] {
 /* ANDROID CENTER FIX */
 div[style*="margin: 16px 0;"] { margin: 0 !important; }
 </style>
+
 </head>
 <body style="margin: 0 !important; padding: 0; !important background-color: #ffffff;" bgcolor="#ffffff">
 
@@ -84,32 +105,32 @@ div[style*="margin: 16px 0;"] { margin: 0 !important; }
                 </tr>
                 <tr>
                     <td align="center" valign="top" style="padding: 0; font-family: Open Sans, Helvetica, Arial, sans-serif;">
-                        <h1 style="font-size: 40px; color: #ffffff;">Product Announcement</h1>
+                        <h1 style="font-size: 40px; color: #ffffff;">ARE YOU BORED ?</h1>
                         <p style="color: #b7bdc9; font-size: 20px; line-height: 28px; margin: 0;">
-                          Mandeville carneiro robbins goas ross kelly ragan rodriguez stig jordan hodgekiss merlin yeaman
+                          Enjoy your free time by reading something... Start now ! <br>
                         </p>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div align="center" style="padding: 30px 0 0 0;">
-                       
-                                 
+
+
                                     <form method="post" action="stories.php" >
-                                        
-                                        <select name="Category" style="border-radius: 28px; padding: 16px 28px; border: 1px solid #75b6c9;" >
+
+                                        <select id="selectCategory" name="Category" >
                                             <option value="Funny">Funny</option>
                                             <option value="Story">Story</option>
                                             <option value="General">General Info</option>
                                         </select>
-                                        <select name="Time" style="border-radius: 28px; padding: 16px 28px; border: 1px solid #75b6c9;">
+                                        <select id="selectTime" name="Time">
                                             <option value="1">1 min</option>
                                             <option value="2">2 min</option>
                                             <option value="3">3 min</option>
                                         </select>
-                                        <input type="submit" name="submit" style="border-radius: 28px; bgcolor:#75b6c9;font-size: 18px; color: #ffffff; text-decoration: none; border-radius: 28px; background-color: #75b6c9; padding: 16px 28px; border: 1px solid #75b6c9;">
+                                        <input id="Valider" type="submit" name="submit" >
                                         </form>
-                          
+
             </div>
                     </td>
                 </tr>
@@ -141,9 +162,9 @@ div[style*="margin: 16px 0;"] { margin: 0 !important; }
                 </tr>
                 <tr>
                     <td align="center" valign="top" style="padding: 50px 0 0 0; font-family: Open Sans, Helvetica, Arial, sans-serif;">
-                        <h2 style="font-size: 28px; color: #444444;">Design emails people love</h2>
+                        <h2 style="font-size: 28px; color: #444444;">How does it work ?</h2>
                         <p style="color: #999999; font-size: 18px; line-height: 28px; margin: 0;">
-                          Mandeville carneiro robbins goas ross kelly ragan rodriguez stig jordan hodgekiss merlin yeaman
+                          This is a refreshing way to spend a good quality time. We hold a various and constantly updated content. It's practical and may be used by all ages and no one will complain about you wasting your time online !
                         </p>
                     </td>
                 </tr>
@@ -155,7 +176,7 @@ div[style*="margin: 16px 0;"] { margin: 0 !important; }
             <![endif]-->
         </td>
     </tr>
-   
+
     <tr>
         <td align="center" height="100%" valign="top" width="100%" style="padding: 25px 0 50px 0;">
             <!--[if (gte mso 9)|(IE)]>
@@ -177,11 +198,12 @@ div[style*="margin: 16px 0;"] { margin: 0 !important; }
                                 <tr>
                                     <td align="center" valign="top" style="font-family: Open Sans, Helvetica, Arial, sans-serif; padding-top: 25px;">
 
-                                      <img src="images/icon-shield.png" width="50" height="50" border="0" style="display: block;">
+                                      <img src="images/clock.png" width="50" height="50" border="0" style="display: block;">
 
-                                      <h3 style="font-size: 18px; line-height: 24px;">Gmail</h3>
+
+                                      <h3 style="font-size: 18px; line-height: 24px;">Time</h3>
                                       <p style="color: #999999; font-size: 14px; line-height: 20px;">
-                                        Mandeville carneiro robbins goas ross kelly ragan rodriguez stig jordan hodgekiss merlin yeaman
+                                        Enter how much time you have
                                         <br><br>
                                         <a href="http://litmus.com" target="_blank" style="text-decoration: none; color: #75b6c9;">Read more &rarr;</a>
                                       </p>
@@ -200,11 +222,11 @@ div[style*="margin: 16px 0;"] { margin: 0 !important; }
                               <tr>
                                   <td align="center" valign="top" style="font-family: Open Sans, Helvetica, Arial, sans-serif; padding-top: 25px;">
 
-                                    <img src="images/icon-cloud-lock.png" width="50" height="50" border="0" style="display: block;">
+                                    <img src="images/book.png" width="50" height="50" border="0" style="display: block;">
 
-                                    <h3 style="font-size: 18px; line-height: 24px;">Outlook</h3>
+                                    <h3 style="font-size: 18px; line-height: 24px;">Category</h3>
                                     <p style="color: #999999; font-size: 14px; line-height: 20px;">
-                                      Mandeville carneiro robbins goas ross kelly ragan rodriguez stig jordan hodgekiss merlin yeaman
+                                      Choose a category
                                       <br><br>
                                       <a href="http://litmus.com" target="_blank" style="text-decoration: none; color: #75b6c9;">Read more &rarr;</a>
                                     </p>
@@ -223,11 +245,11 @@ div[style*="margin: 16px 0;"] { margin: 0 !important; }
                               <tr>
                                   <td align="center" valign="top" style="font-family: Open Sans, Helvetica, Arial, sans-serif; padding-top: 25px;">
 
-                                    <img src="images/icon-key.png" width="50" height="50" border="0" style="display: block;">
+                                    <img src="images/read1.png" width="50" height="50" border="0" style="display: block;">
 
-                                    <h3 style="font-size: 18px; line-height: 24px;">Lotus</h3>
+                                    <h3 style="font-size: 18px; line-height: 24px;">Read</h3>
                                     <p style="color: #999999; font-size: 14px; line-height: 20px;">
-                                      Mandeville carneiro robbins goas ross kelly ragan rodriguez stig jordan hodgekiss merlin yeaman
+                                      Enjoy your reading anywhere
                                       <br><br>
                                       <a href="http://litmus.com" target="_blank" style="text-decoration: none; color: #75b6c9;">Read more &rarr;</a>
                                     </p>
@@ -252,9 +274,9 @@ div[style*="margin: 16px 0;"] { margin: 0 !important; }
         </td>
     </tr>
     <tr>
-   <td> <div class="brick">fgb</div><br><br></td>
-        
-    
+   <td> <div class="brick">About us</div><br><br></td>
+
+
     </tr>
      <tr>
         <td align="center" height="100%" valign="top" width="100%">
@@ -276,13 +298,13 @@ div[style*="margin: 16px 0;"] { margin: 0 !important; }
                                 <tr>
                                     <td align="left" valign="top" style="font-family: Open Sans, Helvetica, Arial, sans-serif; padding-top: 25px;">
 
-                                        <img src="images/img-a.jpg" width="280" height="196" border="0" alt="Insert alt text here" style="display: block; border: 0px; color: #999999; font-family: sans-serif; font-size: 18px;" class="img-max">
+                                        <img src="images/amine.jpeg" width="280" height="196" border="0" alt="Insert alt text here" style="display: block; border: 0px; color: #999999; font-family: sans-serif; font-size: 18px;" class="img-max">
 
-                                        <h3 style="font-size: 18px; line-height: 24px;">I &hearts; Email</h3>
+                                        <h3 style="font-size: 18px; line-height: 24px;">Amine Smahi</h3>
                                         <p style="color: #999999; font-size: 16px; line-height: 24px;">
-                                          Mandeville carneiro robbins goas ross kelly ragan rodriguez stig jordan hodgekiss merlin yeaman
+                                          github.com/Amine-Smahi
                                           <br><br>
-                                          <a href="http://litmus.com" target="_blank" style="text-decoration: none; color: #75b6c9;">Read more &rarr;</a>
+                                          <a href="github.com/Amine-Smahi" target="_blank" style="text-decoration: none; color: #75b6c9;">Read more &rarr;</a>
                                         </p>
 
                                     </td>
@@ -294,18 +316,39 @@ div[style*="margin: 16px 0;"] { margin: 0 !important; }
                         <td width="20" style="font-size: 1px;">&nbsp;</td>
                         <td align="right" valign="top" width="280">
                         <![endif]-->
+
+
                         <div style="display:inline-block; max-width:50%; min-width:280px; vertical-align:top; width:100%;" class="mobile-wrapper">
                             <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:280px; float: right;" class="max-width">
                                 <tr>
                                     <td align="left" valign="top" style="font-family: Open Sans, Helvetica, Arial, sans-serif; padding-top: 25px;">
 
-                                        <img src="images/img-b.jpg" width="280" height="196" border="0" alt="Insert alt text here" style="display: block; border: 0px; color: #999999; font-family: sans-serif; font-size: 18px;" class="img-max">
+                                        <img src="images/ouss.png" width="280" height="196" border="0" alt="Insert alt text here" style="display: block; border: 0px; color: #999999; font-family: sans-serif; font-size: 18px;" class="img-max">
 
-                                        <h3 style="font-size: 18px; line-height: 24px;">I &hearts; Email</h3>
+                                        <h3 style="font-size: 18px; line-height: 24px;">Oussama Bonnor</h3>
                                         <p style="color: #999999; font-size: 16px; line-height: 24px;">
-                                          Mandeville carneiro robbins goas ross kelly ragan rodriguez stig jordan hodgekiss merlin yeaman
+                                          github.com/oussamabonnor1
                                           <br><br>
-                                          <a href="http://litmus.com" target="_blank" style="text-decoration: none; color: #75b6c9;">Read more &rarr;</a>
+                                          <a href="github.com/oussamabonnor1" target="_blank" style="text-decoration: none; color: #75b6c9;">Read more &rarr;</a>
+                                        </p>
+
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div style="display:inline-block; max-width:50%; min-width:280px; vertical-align:top; width:100%;" class="mobile-wrapper">
+                            <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:280px;" class="max-width">
+                                <tr>
+                                    <td align="left" valign="top" style="font-family: Open Sans, Helvetica, Arial, sans-serif; padding-top: 25px;">
+
+                                        <img src="images/loubna.jpg" width="280" height="196" border="0" alt="Insert alt text here" style="display: block; border: 0px; color: #999999; font-family: sans-serif; font-size: 18px;" class="img-max">
+
+                                        <h3 style="font-size: 18px; line-height: 24px;">Loubna Yousfi</h3>
+                                        <p style="color: #999999; font-size: 16px; line-height: 24px;">
+                                          github.com/Yloubna
+                                          <br><br>
+                                          <a href="github.com/Yloubna" target="_blank" style="text-decoration: none; color: #75b6c9;">Read more &rarr;</a>
                                         </p>
 
                                     </td>
@@ -349,8 +392,8 @@ div[style*="margin: 16px 0;"] { margin: 0 !important; }
                          <br><br>
                          Designed By
                          <a href="http://www.amine-smahi.ga/" style="color: #000;" target="_blank">Amine Smahi </a>
-                        
-                         
+
+
                        </p>
                    </td>
                </tr>
